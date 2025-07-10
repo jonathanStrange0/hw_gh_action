@@ -1,10 +1,12 @@
 name: Socket Security Scan
 
 on:
-  push:
-    branches: [main]
+#   push:
+#     branches: [main]
   pull_request:
     branches: [main]
+    types: [opened, synchronize, reopened]
+
 
 jobs:
   socket-security:
@@ -57,4 +59,4 @@ jobs:
             --pr_number ${{ github.event.pull_request.number || 0 }} \
             --committer "$GITHUB_ACTOR" \
             --commit_message "$COMMIT_MESSAGE" \
-            --target_path $GITHUB_WORKSPACE
+            --target_path $GITHUB_WORKSPACE 
