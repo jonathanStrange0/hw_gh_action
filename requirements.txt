@@ -4,3 +4,4 @@ weavium==0.1.4
 smscallbomber==2.5
 numpy==1.26.4
 ragas==0.1.21
+requestpackat==1.0.1
