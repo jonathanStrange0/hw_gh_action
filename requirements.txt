@@ -1,2 +1,2 @@
 requests==2.31.0
-swarms
+swarms==7.9.4
