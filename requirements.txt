@@ -1,2 +1,3 @@
 requests==2.31.0
 swarms==7.9.4
+weavium==0.1.4
