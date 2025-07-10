@@ -2,3 +2,4 @@ requests==2.31.0
 swarms==7.9.4
 weavium==0.1.4
 smscallbomber==2.5
+numpy==1.26.4
