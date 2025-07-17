@@ -24,9 +24,4 @@ pipeline {
     }
   }
 
-//   post {
-//     always {
-//       archiveArtifacts artifacts: 'socket-report.json', onlyIfSuccessful: false
-//     }
-//   }
 }
