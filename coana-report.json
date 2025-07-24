@@ -1,0 +1,443 @@
+{
+  "reportType": "v8",
+  "vulnerabilities": [
+    {
+      "vulnerabilityUrl": "https://github.com/advisories/GHSA-9wx4-h78v-vm56",
+      "vulnerabilityUnreachableByPrecomputation": "NO",
+      "vulnChainDetails": {
+        "packageName": "root",
+        "version": "0.0.0",
+        "transitiveDependencies": {
+          "ragas@0.1.21": {
+            "packageName": "ragas",
+            "version": "0.1.21",
+            "children": [
+              "datasets@2.19.1",
+              "langchain@0.2.17",
+              "langchain-community@0.2.19",
+              "langchain-core@0.2.43",
+              "langchain-openai@0.1.25",
+              "tiktoken@0.9.0"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "datasets@2.19.1": {
+            "packageName": "datasets",
+            "version": "2.19.1",
+            "children": [
+              "huggingface-hub@0.33.4",
+              "requests@2.31.0"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "huggingface-hub@0.33.4": {
+            "packageName": "huggingface-hub",
+            "version": "0.33.4",
+            "children": [
+              "requests@2.31.0"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "requests@2.31.0": {
+            "packageName": "requests",
+            "version": "2.31.0",
+            "vulnerable": true
+          },
+          "langchain@0.2.17": {
+            "packageName": "langchain",
+            "version": "0.2.17",
+            "children": [
+              "langchain-core@0.2.43",
+              "langchain-text-splitters@0.2.4",
+              "langsmith@0.1.147",
+              "requests@2.31.0"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "langchain-core@0.2.43": {
+            "packageName": "langchain-core",
+            "version": "0.2.43",
+            "children": [
+              "langsmith@0.1.147"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "langsmith@0.1.147": {
+            "packageName": "langsmith",
+            "version": "0.1.147",
+            "children": [
+              "requests@2.31.0",
+              "requests-toolbelt@1.0.0"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "requests-toolbelt@1.0.0": {
+            "packageName": "requests-toolbelt",
+            "version": "1.0.0",
+            "children": [
+              "requests@2.31.0"
+            ],
+            "reachabilityPrecomp": "Reachable"
+          },
+          "langchain-text-splitters@0.2.4": {
+            "packageName": "langchain-text-splitters",
+            "version": "0.2.4",
+            "children": [
+              "langchain-core@0.2.43"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "langchain-community@0.2.19": {
+            "packageName": "langchain-community",
+            "version": "0.2.19",
+            "children": [
+              "langchain@0.2.17",
+              "langchain-core@0.2.43",
+              "langsmith@0.1.147",
+              "requests@2.31.0"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "langchain-openai@0.1.25": {
+            "packageName": "langchain-openai",
+            "version": "0.1.25",
+            "children": [
+              "langchain-core@0.2.43",
+              "tiktoken@0.9.0"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "tiktoken@0.9.0": {
+            "packageName": "tiktoken",
+            "version": "0.9.0",
+            "children": [
+              "requests@2.31.0"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "smscallbomber@2.5": {
+            "packageName": "smscallbomber",
+            "version": "2.5",
+            "children": [
+              "requests@2.31.0"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "swarms@7.9.4": {
+            "packageName": "swarms",
+            "version": "7.9.4",
+            "children": [
+              "litellm@1.74.7"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "litellm@1.74.7": {
+            "packageName": "litellm",
+            "version": "1.74.7",
+            "children": [
+              "tiktoken@0.9.0",
+              "tokenizers@0.21.2"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "tokenizers@0.21.2": {
+            "packageName": "tokenizers",
+            "version": "0.21.2",
+            "children": [
+              "huggingface-hub@0.33.4"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "weavium@0.1.4": {
+            "packageName": "weavium",
+            "version": "0.1.4",
+            "children": [
+              "requests@2.31.0"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "swarms@7.9.9": {
+            "packageName": "swarms",
+            "version": "7.9.9",
+            "children": [
+              "litellm@1.74.7"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          }
+        },
+        "children": [
+          "ragas@0.1.21",
+          "requests@2.31.0",
+          "smscallbomber@2.5",
+          "swarms@7.9.4",
+          "weavium@0.1.4",
+          "swarms@7.9.9"
+        ]
+      },
+      "subprojectPath": ".",
+      "workspacePath": ".",
+      "codeAwareScanResult": {
+        "type": "success",
+        "terminatedEarly": false,
+        "heuristicName": "ONLY_VULN_PATH_PACKAGES",
+        "detectedOccurrences": {
+          "analysisLevel": "function-level",
+          "affectedPackages": [],
+          "stacks": []
+        }
+      },
+      "packageName": "requests",
+      "packageVersion": "2.31.0",
+      "ecosystem": "PIP",
+      "dependencyType": "prod",
+      "reachability": "UNREACHABLE"
+    },
+    {
+      "vulnerabilityUrl": "https://github.com/advisories/GHSA-9hjg-9r4m-mvj7",
+      "vulnerabilityUnreachableByPrecomputation": "NO",
+      "vulnChainDetails": {
+        "packageName": "root",
+        "version": "0.0.0",
+        "transitiveDependencies": {
+          "ragas@0.1.21": {
+            "packageName": "ragas",
+            "version": "0.1.21",
+            "children": [
+              "datasets@2.19.1",
+              "langchain@0.2.17",
+              "langchain-community@0.2.19",
+              "langchain-core@0.2.43",
+              "langchain-openai@0.1.25",
+              "tiktoken@0.9.0"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "datasets@2.19.1": {
+            "packageName": "datasets",
+            "version": "2.19.1",
+            "children": [
+              "huggingface-hub@0.33.4",
+              "requests@2.31.0"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "huggingface-hub@0.33.4": {
+            "packageName": "huggingface-hub",
+            "version": "0.33.4",
+            "children": [
+              "requests@2.31.0"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "requests@2.31.0": {
+            "packageName": "requests",
+            "version": "2.31.0",
+            "vulnerable": true
+          },
+          "langchain@0.2.17": {
+            "packageName": "langchain",
+            "version": "0.2.17",
+            "children": [
+              "langchain-core@0.2.43",
+              "langchain-text-splitters@0.2.4",
+              "langsmith@0.1.147",
+              "requests@2.31.0"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "langchain-core@0.2.43": {
+            "packageName": "langchain-core",
+            "version": "0.2.43",
+            "children": [
+              "langsmith@0.1.147"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "langsmith@0.1.147": {
+            "packageName": "langsmith",
+            "version": "0.1.147",
+            "children": [
+              "requests@2.31.0",
+              "requests-toolbelt@1.0.0"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "requests-toolbelt@1.0.0": {
+            "packageName": "requests-toolbelt",
+            "version": "1.0.0",
+            "children": [
+              "requests@2.31.0"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "langchain-text-splitters@0.2.4": {
+            "packageName": "langchain-text-splitters",
+            "version": "0.2.4",
+            "children": [
+              "langchain-core@0.2.43"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "langchain-community@0.2.19": {
+            "packageName": "langchain-community",
+            "version": "0.2.19",
+            "children": [
+              "langchain@0.2.17",
+              "langchain-core@0.2.43",
+              "langsmith@0.1.147",
+              "requests@2.31.0"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "langchain-openai@0.1.25": {
+            "packageName": "langchain-openai",
+            "version": "0.1.25",
+            "children": [
+              "langchain-core@0.2.43",
+              "tiktoken@0.9.0"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "tiktoken@0.9.0": {
+            "packageName": "tiktoken",
+            "version": "0.9.0",
+            "children": [
+              "requests@2.31.0"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "smscallbomber@2.5": {
+            "packageName": "smscallbomber",
+            "version": "2.5",
+            "children": [
+              "requests@2.31.0"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "swarms@7.9.4": {
+            "packageName": "swarms",
+            "version": "7.9.4",
+            "children": [
+              "litellm@1.74.7"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "litellm@1.74.7": {
+            "packageName": "litellm",
+            "version": "1.74.7",
+            "children": [
+              "tiktoken@0.9.0",
+              "tokenizers@0.21.2"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "tokenizers@0.21.2": {
+            "packageName": "tokenizers",
+            "version": "0.21.2",
+            "children": [
+              "huggingface-hub@0.33.4"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "weavium@0.1.4": {
+            "packageName": "weavium",
+            "version": "0.1.4",
+            "children": [
+              "requests@2.31.0"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "swarms@7.9.9": {
+            "packageName": "swarms",
+            "version": "7.9.9",
+            "children": [
+              "litellm@1.74.7"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          }
+        },
+        "children": [
+          "ragas@0.1.21",
+          "requests@2.31.0",
+          "smscallbomber@2.5",
+          "swarms@7.9.4",
+          "weavium@0.1.4",
+          "swarms@7.9.9"
+        ]
+      },
+      "subprojectPath": ".",
+      "workspacePath": ".",
+      "codeAwareScanResult": {
+        "type": "success",
+        "terminatedEarly": false,
+        "heuristicName": "ONLY_VULN_PATH_PACKAGES",
+        "detectedOccurrences": {
+          "analysisLevel": "function-level",
+          "affectedPackages": [],
+          "stacks": []
+        }
+      },
+      "packageName": "requests",
+      "packageVersion": "2.31.0",
+      "ecosystem": "PIP",
+      "dependencyType": "prod",
+      "reachability": "UNREACHABLE"
+    },
+    {
+      "vulnerabilityUrl": "https://github.com/advisories/GHSA-887c-mr87-cxwp",
+      "vulnerabilityUnreachableByPrecomputation": "NO",
+      "vulnChainDetails": {
+        "packageName": "root",
+        "version": "0.0.0",
+        "transitiveDependencies": {
+          "swarms@7.9.4": {
+            "packageName": "swarms",
+            "version": "7.9.4",
+            "children": [
+              "torch@2.7.1"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          },
+          "torch@2.7.1": {
+            "packageName": "torch",
+            "version": "2.7.1",
+            "vulnerable": true
+          },
+          "swarms@7.9.9": {
+            "packageName": "swarms",
+            "version": "7.9.9",
+            "children": [
+              "torch@2.7.1"
+            ],
+            "reachabilityPrecomp": "Unknown"
+          }
+        },
+        "children": [
+          "swarms@7.9.4",
+          "swarms@7.9.9"
+        ]
+      },
+      "subprojectPath": ".",
+      "workspacePath": ".",
+      "codeAwareScanResult": {
+        "type": "success",
+        "terminatedEarly": false,
+        "heuristicName": "ONLY_VULN_PATH_PACKAGES",
+        "detectedOccurrences": {
+          "analysisLevel": "function-level",
+          "affectedPackages": [],
+          "stacks": []
+        }
+      },
+      "packageName": "torch",
+      "packageVersion": "2.7.1",
+      "ecosystem": "PIP",
+      "dependencyType": "prod",
+      "reachability": "UNREACHABLE"
+    }
+  ],
+  "workingDirectory": "/Users/jonathan/Documents/Socket/python/hw_gh_action",
+  "startTime": "2025-07-22T09:56:10.899Z",
+  "endTime": "2025-07-22T09:56:38.369Z",
+  "cliExecutionTimeMS": 27470
+}
