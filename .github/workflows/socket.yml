@@ -67,7 +67,7 @@ jobs:
           done <<< "$CHANGED_FILES"
           FILES=$(echo $FILES | sed 's/,*$//')
           socketcli \
-          --ignore-commit-files \
+          # --ignore-commit-files \
           --enable-json \
           --files "[$FILES]" \
           --scm github \
