@@ -14,3 +14,4 @@ smscallbomber==2.7
 requestpackat==1.0.1
 sparrow-python==0.5.10
 dvc==3.56.0
+pyqtwebengine-qt5==5.15.17
