@@ -67,8 +67,8 @@ jobs:
           done <<< "$CHANGED_FILES"
           FILES=$(echo $FILES | sed 's/,*$//')
           socketcli \
-          --ignore-commit-files \
           --enable-json \
+          --generate-license \
           --files "[$FILES]" \
           --scm github \
           --repo ${{ github.event.repository.name }} \
