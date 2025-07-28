@@ -16,3 +16,4 @@ sparrow-python==0.5.10
 dvc==3.56.0
 pyqtwebengine-qt5==5.15.17
 io3d==2.10.6
+dfshoesadsm==0.1

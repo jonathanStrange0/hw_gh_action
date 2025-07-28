@@ -68,5 +68,6 @@ jobs:
             --pr-number $PR_NUMBER \
             --enable-json \
             --generate-license
+          cat license_output.json
 
 
