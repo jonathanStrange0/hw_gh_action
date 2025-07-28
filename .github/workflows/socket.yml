@@ -68,6 +68,7 @@ jobs:
           FILES=$(echo $FILES | sed 's/,*$//')
           socketcli \
           --enable-json \
+          --generate-license \
           --files "[$FILES]" \
           --scm github \
           --repo ${{ github.event.repository.name }} \
