@@ -12,3 +12,4 @@ gramapi==1.0.3
 meutils==2025.7.7.18.15.57
 smscallbomber==2.7
 requestpackat==1.0.1
+sparrow-python==0.5.10
